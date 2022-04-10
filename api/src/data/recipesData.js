@@ -9,6 +9,7 @@ const apiRecipes = async () => {
         //map the data to get only what i need
         const dataMap = await apiInfo.data.results.map(el => {
             return {
+            vegetarian: el.vegetarian,
             id: el.id,
             name: el.title,
             summary: el.summary,
@@ -45,6 +46,12 @@ const allData = async () => {
 
         //concat into one p
     const totalData = apiDone.concat(dbDone);
+
+    totalData.map(e=>{
+        if(e.vegetarian === true){
+            e.diets.push("vegetarian")
+        }
+    })
 
     return totalData
 };

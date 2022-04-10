@@ -1,6 +1,7 @@
 const {Recipes, Diet} = require('../../db.js');
 
 const postRecipes = async (req, res) => {
+
     const {  // all the information that the user give us.
         name,
         summary,
@@ -8,10 +9,8 @@ const postRecipes = async (req, res) => {
         healthyScore,
         steps,
         image,
-        diet,
-        
+        diets
     } = req.body
-
 
     let createFud = await Recipes.create({ //we create the recipe in the database
         name,
@@ -23,7 +22,7 @@ const postRecipes = async (req, res) => {
     })
 
     let dietDb = await Diet.findAll({ // we search in Diet db the diets that match with the ones of the activity
-        where: {name: diet} 
+        where: {name: diets} 
     })
 
     createFud.addDiet(dietDb) // we make the relation if recipes and diets

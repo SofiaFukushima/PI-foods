@@ -1,0 +1,10 @@
+.title{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    display: inline;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 200%;
+    color: #9C6644;
+    text-shadow: 1px 1px 2px white;
+}

@@ -6,17 +6,27 @@ const getIdRecipes = async (req, res) => {
 
     //request the name from the query
     let {idReceta} = req.params;
+    console.log(idReceta)
     //await all the data to bring it
     let recipesData = await allData();
     //if there's a name search for coincideses
 
     if(idReceta){
         let idRecipes = idReceta.toString().toLowerCase()
-        let recipes = await recipesData.filter(e => e.id.toString().toLowerCase().includes(idRecipes))
-        recipes.length?
-        res.status(200).send(recipes) : res.status(404).send(`😢 We can't find ${idReceta}, please try again 😢`)
-    } else {res.status(200).send(recipesData)}
+        console.log(idRecipes)
+
+        let recipe = await recipesData.filter(e => e.id.toString().toLowerCase().includes(idRecipes))
+        console.log(recipe)
+
+        if(recipe.length>0){
+            
+        res.status(200).send(recipe)
+    } else {
+         res.status(404).send(`😢 We can't find ${idReceta}, please try again 😢`)}
+    } else {res.status(404).send("Not ID")}
 }
+
+
      /*  let {idReceta} = req.params;
 
      const idReceta = 716426

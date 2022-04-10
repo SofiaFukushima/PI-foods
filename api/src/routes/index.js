@@ -9,13 +9,13 @@ const {getDiets} = require('./diets/getDiets');
 
 const router = Router();
 
-//all the recipes and the name query
-router.use('/recipes' , getNameRecipes);
 //get the id's
 router.use('/recipes/:idReceta' , getIdRecipes);
+//all the recipes and the name query
+router.use('/recipes' , getNameRecipes);
 //get the diets
 router.use('/types' , getDiets);
 //post recipes
-router.use('/recipe', postRecipes);
+router.post('/recipe', postRecipes);
 
 module.exports = router;

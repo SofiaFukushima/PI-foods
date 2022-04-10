@@ -1,0 +1,21 @@
+body{
+    background-color: bisque;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+    flex-direction: row;
+  padding-left: 3%;
+}
+
+.paginado{
+  display: flex;
+  justify-content: center;
+}
+

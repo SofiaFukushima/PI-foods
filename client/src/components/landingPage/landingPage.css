@@ -1,0 +1,54 @@
+.landing{
+    background-image: url('https://media.istockphoto.com/photos/table-top-counter-with-blurred-people-and-restaurant-interior-picture-id1077538138?k=20&m=1077538138&s=170667a&w=0&h=4Q5V-d_PGbJXs5fs12zdissVMLh-7fqsucHdbF5z2rI=');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+.titleLanding{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.titleLanding h1{
+    display: inline;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 500%;
+    color: white;
+}
+
+.titleLanding h2{
+    display: inline;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 500%;
+    color: #9C6644;
+    text-shadow: 1px 1px 2px white;
+}
+
+.only{
+    background-color: #9C6644;
+    border-radius: 5%;
+}
+
+.but{
+    margin-top: 60vh;
+}
+
+.button{
+    border-radius: 9px;
+    text-decoration: none;
+    color:#9C6644;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    border: 3px solid;
+    padding: 7px 13px;
+    background-color: #ebe2dd9a;
+}
+
+.button:hover{
+    color: #9C6644;
+
+}

@@ -1,0 +1,27 @@
+
+.list{
+    list-style: none;
+    display: flex;
+  flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.butons{
+        width: 50px;
+        height: 25px;
+        margin: 0 5px;
+        border-radius: 999px;
+        background: #e1bb80;
+        cursor: pointer;
+        box-shadow: 
+          0 5px 5px -5px rgba(#e1bb80, 0.15),
+          0 10px 10px -5px rgba(#e1bb80, 0.15),
+          0 15px 15px -5px rgba(#e1bb80, 0.15),
+          0 20px 20px -5px rgba(#e1bb80, 0.15);
+        transition: 0.25s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        padding: 10px;
+      }

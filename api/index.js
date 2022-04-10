@@ -25,7 +25,7 @@ conn.sync({ force: true }).then(() => {
   server.listen(3001, () => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
     //harcode deits so i can get use it.
-    const diets = ["gluten free","paleolithic", "vegetarian", "lacto ovo vegetarian","vegan","pescatarian","paleo","primal","whole 30", "fodmap friendly", "fruitarian", "dairyFree"];
+    const diets = ["gluten free", "vegetarian", "lacto ovo vegetarian","vegan","pescatarian","paleolithic","primal","whole 30", "fodmap friendly"];
     diets.forEach(async (element) => await Diet.create({name: element}));
   });
 });
